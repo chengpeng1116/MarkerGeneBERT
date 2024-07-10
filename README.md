@@ -4,10 +4,10 @@ a natural language processing (NLP) system designed to extract critical informat
 
 ## Requisites
 python 3.9
-
 R 4.4
 sci-hub : https://github.com/suqingdong/scihub
 grobid : https://github.com/kermitt2/grobid
+
 
 ## Downloading the Model
 en_core_sci_scibert :https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz
