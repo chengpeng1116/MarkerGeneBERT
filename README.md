@@ -3,7 +3,7 @@ a natural language processing (NLP) system designed to extract critical informat
 
 
 ## Requisites
-PYTHON(v3.9.0)<br>
+python(v3.9.0)<br>
 R(v4.3.2)<br>
 sci-hub : https://github.com/suqingdong/scihub<br>
 grobid : https://github.com/kermitt2/grobid<br>
@@ -16,7 +16,9 @@ en_ner_craft_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0
 en_ner_bionlp13cg_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bionlp13cg_md-0.5.4.tar.gz<br>
 en_ner_bc5cdr_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz<br>
 
-## Instalation
+## Instalation NER Model
+pip install pandas<br>
+pip install spacy<br>
 pip install scispacy<br>
 pip install NER_Model_local_URL<br>
 
