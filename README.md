@@ -18,7 +18,7 @@ en_ner_bc5cdr_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v
 
 ## Instalation
 pip install scispacy<br>
-pip install <Model local URL><br>
+pip install Model_local_URL<br>
 
 
 ##  run MarkerGeneBERT
