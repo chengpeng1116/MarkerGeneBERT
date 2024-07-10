@@ -3,8 +3,8 @@ a natural language processing (NLP) system designed to extract critical informat
 
 
 ## Requisites
-python 3.9
-R 4.4
+python 3.9< br >
+R 4.4< br >
 sci-hub : https://github.com/suqingdong/scihub
 grobid : https://github.com/kermitt2/grobid
 
