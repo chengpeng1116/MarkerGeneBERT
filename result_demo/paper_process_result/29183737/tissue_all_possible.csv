@@ -1,0 +1,12 @@
+﻿tissue_name,tissue_freq,keyword_freq,cell_freq,tissue_rank,keyword_rank,cell_rank,rank_stat,tissue_name_merge
+kidney,3,6,15,3,5,5,13,kidney:13
+mesenchyme,1,3,8,1,4,4,9,mesenchyme:9
+loop of henle,1,1,3,1,2,3,6,loop of henle:6
+proximal tubule,1,1,3,1,2,3,6,proximal tubule:6
+brain,1,1,3,1,2,3,6,brain:6
+tubule,1,1,3,1,2,3,6,tubule:6
+nephron,2,1,2,2,2,2,6,nephron:6
+renal vesicle,1,2,2,1,3,2,6,renal vesicle:6
+pretubular,1,1,3,1,2,3,6,pretubular:6
+duct,1,1,0,1,2,1,4,duct:4
+cortical stroma,1,1,0,1,2,1,4,cortical stroma:4
