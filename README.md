@@ -22,7 +22,7 @@ pip install NER_Model_local_URL<br>
 
 
 ##  run MarkerGeneBERT
-cd workpath
+cd workpath<br>
 python CellMarker_sh.py --cfg CellMarker.cfg<br> 
 - CellMarker_sh.py will return step1-6.sh , the user needs to run the scripts for step1-step6 in sequence
 ```
