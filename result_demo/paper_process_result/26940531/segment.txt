@@ -1,0 +1,235 @@
+Paper_title: The Journal of Physiology Single cell transcriptome analysis of mouse carotid body glomus cells
+The Journal of Physiology Single cell transcriptome analysis of mouse carotid body glomus cells
+Paper_abstract: r Carotid body (CB) glomus cells mediate acute oxygen sensing and the initiation of the hypoxic ventilatory response, yet the gene expression profile of these cells is not available. r We demonstrate that the single cell RNA-Seq method is a powerful tool for identifying highly expressed genes in CB glomus cells. r Our single cell RNA-Seq results characterized novel CB glomus cell genes, including members of the G protein-coupled receptor signalling pathway, ion channels and atypical mitochondrial electron transport chain subunits. r A heterologous cell-based screening identified acetate (which is known to affect CB glomus cell activity) as an agonist for the most highly abundant G protein-coupled receptor (Olfr78) in CB glomus cells. r These data established the first transcriptome profile of CB glomus cells, highlighting genes with potential implications in CB chemosensory function.
+r Carotid body (CB) glomus cells mediate acute oxygen sensing and the initiation of the hypoxic ventilatory response, yet the gene expression profile of these cells is not available.
+r We demonstrate that the single cell RNA-Seq method is a powerful tool for identifying highly expressed genes in CB glomus cells.
+r Our single cell RNA-Seq results characterized novel CB glomus cell genes, including members of the G protein-coupled receptor signalling pathway, ion channels and atypical mitochondrial electron transport chain subunits.
+r A heterologous cell-based screening identified acetate (which is known to affect CB glomus cell activity) as an agonist for the most highly abundant G protein-coupled receptor (Olfr78) in CB glomus cells.
+r These data established the first transcriptome profile of CB glomus cells, highlighting genes with potential implications in CB chemosensory function.
+Paper_intro: @@ Oxygen is essential to the survival of animals, and deviation from its normal homeostasis state may lead to undesirable consequences or even death. At the cellular or tissue level, a reduction in the oxygen level can be sensed via stabilization of hypoxia-inducible factors (HIFs), which initiate transcriptions of various hypoxia responsive genes to facilitate survival under a hypoxic state (Semenza, 2012). At the systemic level, even a moderate drop in oxygen tension, at a level that could go undetected by most cells, immediately activates the carotid body (CB) located at the carotid artery bifurcations (Lopez-Barneo et al. 2009;Prabhakar, 2013). The CB reacts to drops in arterial oxygen tension by instructing the brain stem respiratory centre to engage in reflex hyperventilation. Such sensitive and immediate responses are crucial for the prevention of more widespread hypoxemia. Enhanced CB activity has also been implicated in sympathetic activation leading to heart rate variability and hypertension among patients with obstructive sleep apnoea and chronic heart failure (Schultz & Li, 2007;Dempsey et al. 2012). @@ Despite great physiological significance, the identity of oxygen sensors functioning in the CB is still controversial, although multiple players have recently been shown to be critical in this process (Peng et al. 2010;Chang et al. 2015;Fernandez-Aguera et al. 2015;Yuan et al. 2015). A long-held theory suggests that the CB glomus cells, also known as Type I cells, sense hypoxia through hampered mitochondria metabolism (Mills & Jobsis, 1970, 1972;Duchen & Biscoe, 1992a,b;Streller et al. 2002;Buckler & Turner, 2013), although how their mitochondria are specifically influenced by moderate hypoxia is not understood (Chandel & Schumacker, 2000;Kemp & Telezhkin, 2014). To complicate things further, we do not fully understand how the hypoxia signal is transduced to downstream ion channels important for cellular depolarization. In addition to oxygen, CB glomus cell activity is affected by CO 2 , pH, glucose, insulin and acetate (Sato, 1994;Pardal & Lopez-Barneo, 2002;Ribeiro et al. 2013;Prabhakhar & Joyner, 2014), although the molecules mediating these effects are not well characterized. @@ To better understand CB transduction pathways, a comprehensive list of genes expressed in CB glomus cells would serve as a useful resource. However, it has proved challenging to conduct molecular biology experiments, at least partly as a result of the extremely small size of the CB (several hundred micrometers in diameter in rodents). Currently available CB transcriptome information is obtained from whole CB tissues (Ganfornina et al. 2005;Balbir et al. 2007;Fagerlund et al. 2010;Mkrtchian et al. 2012;Chang et al. 2015), which may contain other cell types, including sustentacular cells, endothelial cells, connective tissue cells, fat cells and circulating immune cells. @@ In the present study, we employed a more targeted approach to focus on glomus cells using the single cell RNA-Seq method. Using this approach, we not only confirmed the presence of many of the known CB genes, but also uncovered a large set of genes abundantly expressed in CB glomus cells. Our data suggest that CB glomus cells have a unique transcriptome profile, prominently expressing G protein-coupled receptor (GPCR) signalling pathway components, ion channels and HIF target genes. An olfactory receptor, Olfr78, was the most abundant GPCR in CB glomus cells and responded to acetate in heterologous cells, supporting recent findings suggesting that Olfr78 is enriched in CB and plays an important role in CB function (Chang et al. 2015). The present study also uncovered two atypical mitochondrial electron transport chain (ETC) subunits (Ndufa4l2 and Cox4i2) that were highly enriched in CB glomus cells compared to multiple mouse tissues, highlighting their potential roles in mitochondria-mediated oxygen sensing. approved animal protocol. To collect CB for histology experiments, the carotid artery bifurcations from mice 3 weeks or older (male and female) were snap frozen in Tissue-Tek OCT compound (Sakura Finetek, Torrance, CA, USA) in liquid nitrogen and stored at −80°C. The CB tissues were then sectioned into 16 μm sections using a cryostat (Leica Microsystems, Wetzlar, Germany) and mounted on Superfrost Plus slides (VWR International Ltd, Lutterworth, UK). The slides were allowed to dry before storing at −80°C. @@
+@@ Oxygen is essential to the survival of animals, and deviation from its normal homeostasis state may lead to undesirable consequences or even death.
+At the cellular or tissue level, a reduction in the oxygen level can be sensed via stabilization of hypoxia-inducible factors (HIFs), which initiate transcriptions of various hypoxia responsive genes to facilitate survival under a hypoxic state (Semenza, 2012).
+At the systemic level, even a moderate drop in oxygen tension, at a level that could go undetected by most cells, immediately activates the carotid body (CB) located at the carotid artery bifurcations (Lopez-Barneo et al. 2009;Prabhakar, 2013).
+The CB reacts to drops in arterial oxygen tension by instructing the brain stem respiratory centre to engage in reflex hyperventilation.
+Such sensitive and immediate responses are crucial for the prevention of more widespread hypoxemia.
+Enhanced CB activity has also been implicated in sympathetic activation leading to heart rate variability and hypertension among patients with obstructive sleep apnoea and chronic heart failure (Schultz & Li, 2007;Dempsey et al. 2012).
+@@ Despite great physiological significance, the identity of oxygen sensors functioning in the CB is still controversial, although multiple players have recently been shown to be critical in this process (Peng et al. 2010;Chang et al. 2015;Fernandez-Aguera et al. 2015;Yuan et al. 2015).
+A long-held theory suggests that the CB glomus cells, also known as Type I cells, sense hypoxia through hampered mitochondria metabolism (Mills & Jobsis, 1970, 1972;Duchen & Biscoe, 1992a,b;Streller et al. 2002;Buckler & Turner, 2013), although how their mitochondria are specifically influenced by moderate hypoxia is not understood (Chandel & Schumacker, 2000;Kemp & Telezhkin, 2014).
+To complicate things further, we do not fully understand how the hypoxia signal is transduced to downstream ion channels important for cellular depolarization.
+In addition to oxygen, CB glomus cell activity is affected by CO 2 , pH, glucose, insulin and acetate (Sato, 1994;Pardal & Lopez-Barneo, 2002;Ribeiro et al. 2013;Prabhakhar & Joyner, 2014), although the molecules mediating these effects are not well characterized.
+@@ To better understand CB transduction pathways, a comprehensive list of genes expressed in CB glomus cells would serve as a useful resource.
+However, it has proved challenging to conduct molecular biology experiments, at least partly as a result of the extremely small size of the CB (several hundred micrometers in diameter in rodents).
+Currently available CB transcriptome information is obtained from whole CB tissues (Ganfornina et al. 2005;Balbir et al. 2007;Fagerlund et al. 2010;Mkrtchian et al. 2012;Chang et al. 2015), which may contain other cell types, including sustentacular cells, endothelial cells, connective tissue cells, fat cells and circulating immune cells.
+@@ In the present study, we employed a more targeted approach to focus on glomus cells using the single cell RNA-Seq method.
+Using this approach, we not only confirmed the presence of many of the known CB genes, but also uncovered a large set of genes abundantly expressed in CB glomus cells.
+Our data suggest that CB glomus cells have a unique transcriptome profile, prominently expressing G protein-coupled receptor (GPCR) signalling pathway components, ion channels and HIF target genes.
+An olfactory receptor, Olfr78, was the most abundant GPCR in CB glomus cells and responded to acetate in heterologous cells, supporting recent findings suggesting that Olfr78 is enriched in CB and plays an important role in CB function (Chang et al. 2015).
+The present study also uncovered two atypical mitochondrial electron transport chain (ETC) subunits (Ndufa4l2 and Cox4i2) that were highly enriched in CB glomus cells compared to multiple mouse tissues, highlighting their potential roles in mitochondria-mediated oxygen sensing.
+approved animal protocol.
+To collect CB for histology experiments, the carotid artery bifurcations from mice 3 weeks or older (male and female) were snap frozen in Tissue-Tek OCT compound (Sakura Finetek, Torrance, CA, USA) in liquid nitrogen and stored at −80°C.
+The CB tissues were then sectioned into 16 μm sections using a cryostat (Leica Microsystems, Wetzlar, Germany) and mounted on Superfrost Plus slides (VWR International Ltd, Lutterworth, UK).
+The slides were allowed to dry before storing at −80°C.
+@@
+Paper_section1:  To obtain the gene expression profile of CB glomus cells using the single cell RNA-Seq approach (Fig. 1), we first aimed to evaluate our technique using a well-characterized chemosensory cell, the OSN, for which the canonical signal transduction components have been fully identified and conventional RNA-Seq data are available.
+To obtain the gene expression profile of CB glomus cells using the single cell RNA-Seq approach (Fig. 1), we first aimed to evaluate our technique using a well-characterized chemosensory cell, the OSN, for which the canonical signal transduction components have been fully identified and conventional RNA-Seq data are available.
+Paper_section2: Two OSNs were selected to generate independent single cell-derived cDNA libraries that yielded an average of 5 million reads (Table 1), comparable to other whole tissue RNA-Seq results. The majority of the reads (78.83%) mapped to the mouse reference genome (mm10) and only reads with a single alignment to the exonic regions were counted. Comparison of gene expression levels between these individual single OSNs showed strong correlation (Pearson correlation of 0.82) (Fig. 2A), with increased variation occurring in genes with medium to low expression, as previously shown in other single cell RNA-Seq studies (Wu et al. 2014). Consistent with the current knowledge, each OSN expressed one major unique olfactory receptor at a high level, highlighting a true transcriptome difference between the two samples. To examine whether our single OSN expression profiles agree with that of conventional RNA-Seq, we compared the average relative gene expression of two single OSNs with published RNA-Seq data from fluorescence-activated cell sorted mature OSNs (Magklara et al. 2011). Indeed, we observed a positive correlation (Pearson correlation of 0.68) (Fig. 2B). Notably, all the known genes encoding the canonical signal transduction components in OSNs were highly expressed, including Gnal (guanine nucleotide T. Zhou and others J Physiol 000.0 binding protein, α stimulating, olfactory type), Cnga2 (cyclic nucleotide gated channel α 2) and Adcy3 (adenylyl cyclase type 3). In addition, known olfactory markers, including Omp (olfactory marker protein) and Rtp1 (receptor-transporting protein 1), were also among the most abundant transcripts.
+Two OSNs were selected to generate independent single cell-derived cDNA libraries that yielded an average of 5 million reads (Table 1), comparable to other whole tissue RNA-Seq results.
+The majority of the reads (78.83%) mapped to the mouse reference genome (mm10) and only reads with a single alignment to the exonic regions were counted.
+Comparison of gene expression levels between these individual single OSNs showed strong correlation (Pearson correlation of 0.82) (Fig. 2A), with increased variation occurring in genes with medium to low expression, as previously shown in other single cell RNA-Seq studies (Wu et al. 2014).
+Consistent with the current knowledge, each OSN expressed one major unique olfactory receptor at a high level, highlighting a true transcriptome difference between the two samples.
+To examine whether our single OSN expression profiles agree with that of conventional RNA-Seq, we compared the average relative gene expression of two single OSNs with published RNA-Seq data from fluorescence-activated cell sorted mature OSNs (Magklara et al. 2011).
+Indeed, we observed a positive correlation (Pearson correlation of 0.68) (Fig. 2B).
+Notably, all the known genes encoding the canonical signal transduction components in OSNs were highly expressed, including Gnal (guanine nucleotide T. Zhou and others J Physiol 000.0 binding protein, α stimulating, olfactory type), Cnga2 (cyclic nucleotide gated channel α 2) and Adcy3 (adenylyl cyclase type 3).
+In addition, known olfactory markers, including Omp (olfactory marker protein) and Rtp1 (receptor-transporting protein 1), were also among the most abundant transcripts
+.
+ To obtain the gene expression profile of CB glomus cells using the single cell RNA-Seq approach (Fig. 1), we first aimed to evaluate our technique using a well-characterized chemosensory cell, the OSN, for which the canonical signal transduction components have been fully identified and conventional RNA-Seq data are available.
+Two OSNs were selected to generate independent single cell-derived cDNA libraries that yielded an average of 5 million reads (Table 1), comparable to other whole tissue RNA-Seq results.
+The majority of the reads (78.83%) mapped to the mouse reference genome (mm10) and only reads with a single alignment to the exonic regions were counted.
+Comparison of gene expression levels between these individual single OSNs showed strong correlation (Pearson correlation of 0.82) (Fig. 2A), with increased variation occurring in genes with medium to low expression, as previously shown in other single cell RNA-Seq studies (Wu et al. 2014).
+Consistent with the current knowledge, each OSN expressed one major unique olfactory receptor at a high level, highlighting a true transcriptome difference between the two samples.
+To examine whether our single OSN expression profiles agree with that of conventional RNA-Seq, we compared the average relative gene expression of two single OSNs with published RNA-Seq data from fluorescence-activated cell sorted mature OSNs (Magklara et al. 2011).
+Indeed, we observed a positive correlation (Pearson correlation of 0.68) (Fig. 2B).
+Notably, all the known genes encoding the canonical signal transduction components in OSNs were highly expressed, including Gnal (guanine nucleotide T. Zhou and others J Physiol 000.0 binding protein, α stimulating, olfactory type), Cnga2 (cyclic nucleotide gated channel α 2) and Adcy3 (adenylyl cyclase type 3).
+In addition, known olfactory markers, including Omp (olfactory marker protein) and Rtp1 (receptor-transporting protein 1), were also among the most abundant transcripts.
+Taken together, our data suggest that abundantly expressed genes can be identified via the single cell RNA-Seq approach, which can serve as a powerful tool to screen for key transcripts expressed in rare cell types.
+We next applied our single cell RNA-Seq method to CB glomus cells.
+We dissociated tissues containing the CB, picked single cells and amplified cDNAs derived from each single cell.
+To select cDNA samples derived from CB glomus cells, we conducted marker genes analysis.
+Each single cell-derived cDNA sample was used as a template for PCR diagnosis with primers complementary to three glomus cell markers (Th, tyrosine hydroxylase; Uchl1, ubiquitin carboxyl-terminal esterase L1, also known as PGP9.5; Kcnk3, potassium channel subfamily K member 3, also known as TASK1), as well as a housekeeping gene Gapdh.
+Single cells positive for all glomus cell markers tested were considered as candidate CB glomus cells (Fig. 3A).
+Illumina sequencing libraries for eight candidate CB glomus cells were constructed and sequenced (Table 1).
+The eight CB glomus cells generated an average of 39 million reads, with an average of 88.81% of the reads mapped to the reference mouse genome (mm10).
+The number of genes detected in each cell ranged from 5007 to 7742, which is consistent with other single cell trans-criptome studies (Ramskold et al. 2012;Hanchate et al. 2015).
+Their read distributions followed a similar pattern among the eight samples (Fig. 3B).
+Similar to other single-cell RNA-Seq studies (Shalek et al. 2013;Jaitin et al. 2014;Patel et al. 2014), the transcriptomes of separately processed single CB glomus cells correlated well with each other, yet demonstrated individual variation (mean Pearson correlation: 0.63, 0.32 < r < 0.84) (Fig. 3C).
+When the average expression profile of these single CB glomus cells was compared with published whole CB RNA-Seq and microarray data (Balbir et al. 2007;Chang et al. 2015), we also saw positive correlations (Pearson correlation of 0.58 and 0.59) (Fig. 3D andE).
+As expected, the top 1% genes from our single CB glomus cells occupied high rankings in the whole CB data, albeit lower than they were in CB glomus cells.
+For these genes, an average ranking of top 5% was observed in the C57BL/6J CB RNA-Seq data, and their average ranking was in the top 10% of the DBA/2J CB microarray data.
+Intriguingly, the top 1% genes from the whole CB data were not highly ranked in our CB glomus cells, with an average ranking of 28% and 46%, respectively, for the C57BL/6J RNA-Seq and the DBA/2J microarray, probably reflecting the fact that the fraction of glomus cells in the whole CB is relatively low.
+These suggest that our single cell RNA-Seq data vastly enriched for glomus cell specific transcripts.
+The most highly expressed genes uncovered through our single CB glomus cell RNA-Seq are listed in Table 2, many of which have not been previously reported in CB glomus cells.
+Although our single cell RNA-Seq experiments generated a comprehensive transcriptome profile, it is difficult to Each individual single cell was carefully dispensed into a PCR tube containing lysis buffer and heated for RNA denaturation.
+mRNAs were reverse transcribed using anchor T primers and further processed to generate poly(A) tailed single-stranded cDNAs, which were subsequently amplified using anchor T primers.
+To identify the cell type of interest, each single cell-derived cDNA was used as a template for the marker genes analysis.
+cDNAs capable of amplifying specific cell type markers were selected and used for Illumina library preparation and sequencing.
+Sequences from these candidate cells were then aligned to the current mouse genome database for further analysis.
+exclude the possibility that contamination of non-glomus cells affected the RNA-Seq data relying solely on sequencing analysis.
+To confirm which genes were expressed in the CB glomus cells in vivo, we conducted in situ hybridizations for 53 selected genes using acutely frozen carotid arteries containing CB and surrounding tissues from mice 3 weeks or older.
+We did not limit our selection to the most highly ranked genes but included 17 genes that ranked among the top 30, 13 genes that ranked between 31st to 300th, and 22 genes that ranked T. Zhou and others J Physiol 000.0 between 300th to 7000th, as well as Olfr558, a gene not detectable in our sequencing results.
+As expected, Olfr558 did not show obvious signals (Fig. 4A), and the quantification of relative staining intensity showed that it had the least hybridization signal among all 53 probes tested.
+Similar to the staining pattern using the glomus cell marker Th (Fig. 4D), 40 probes marked the clustered glomus cells typical of CB glomeruli (Fig. 4A-E), which mostly covered genes encoding the GPCR signalling pathway (Fig. 4A), ion channels and associated proteins (Fig. 4B), the HIF pathway (Fig. 4C), and neuronal markers (Fig. 4D).
+For a set of candidate genes including Gnas, Ndufa4l2, Syp and Th, protein expression was additionally confirmed via immunohistochemistry (Fig. 4F).
+Taken together, our single cell RNA-Seq data indeed derived from CB glomus cells and represent their transcriptome.
+How unique is the CB glomus cell transcriptome?
+We first compared gene expression profiles between single CB glomus cells and single OSNs or single VSNs, another class of chemoreceptors that we had sequenced.
+The Pearson correlation coefficients between the CB glomus cell and the OSN/VSN were as low as 0.12 and 0.20 (Fig. 5A andB), indicative of marked differences in transcriptomes among the three cell types.
+When principal component analysis was performed for the expression profiles of these 12 cells, discrete separations among each cell type were observed (Fig. 5C).
+Taken together, our data suggest unique transcriptome profiles in each of the chemosensory cells.
+We next explored which genes were uniquely expressed in the CB glomus cells.
+Differential gene expression  analysis was conducted between CB glomus cells and 15 other mouse tissues (Shen et al. 2012), as well as single cell RNA-Seq data of the OSN and the VSN.
+Overall, 7110 genes were differentially expressed with P < 0.01 after correcting for false discovery rates, among which 448 were over-represented and 6662 were under-represented in CB glomus cells (Fig. 6A).
+Overall, the majority of these differentially expressed CB glomus cell genes display substantial expression level differences compared to the RNA-Seq data of other non-CB tissues (Fig. 6B).
+The drastic differences displayed here further suggest that the CB glomus cell is a distinct sensory cell type, consistent with its unique function.
+A prominent feature of the CB transcriptome profile is the enrichment of various guanine nucleotide-binding proteins (G proteins) that constitute the heterotrimeric G protein complex, an important component of the GPCR signalling pathway (Table 3).
+The α subunits of several G protein families were detected at high levels.
+In particular, the most abundant transcript in glomus cells was stimulatory G protein α (Gnas, also known as G αs ), representing 1.82% of the total transcripts.
+mRNA and protein expression for this cAMP pathway-activating molecule was confirmed by in situ hybridization and immunohistochemistry (Fig. 4A andF).
+G protein α olfactory type (Gnal, also known as G αolf ), which is functionally similar to G αs , was also detected.
+Other highly expressed G protein α subunits include the cAMP-inhibiting G protein α i2/i3 (Gnai2, Gnai3) and G protein α O (Gnao1), as well as the phospholipase C-activating G protein α q and 11 (Gnaq, Gna11).
+In line with this, β and γ subunits of the heterotrimeric G protein complexes were also abundantly expressed, such as Gnb1, Gnb2, Gng2, Gng3, Gng10 and Gng12.
+Consistent with the abundant expression of G proteins, several GPCRs were detected at high levels (Table 4).
+Notably, the olfactory receptor Olfr78 that couples to G αs/olf was found to be the most abundant GPCR in the CB glomus cell transcriptome, consistent with the recent finding that Olfr78 is highly enriched in mouse CB (Chang et al. 2015).
+Other highly expressed GPCRs detected include previously reported adenosine receptor (Adora2a), purinergic receptor (P2ry12), cannabinoid receptor (Cnr1) and pituitary adenylate cyclase-activating polypeptide (PACAP) receptor (Adcyap1r1) (Conde & Monteiro, 2004;McLemore et al. 2004;Xu et al. 2005;Conde et al. 2006;Lam et al. 2012), as well as two unreported GPCRs, latrophilin receptor (Lphn1) and Leucine-rich repeat-containing GPCR (Lgr5).
+The list of GPCRs with less abundant sequencing reads in our single cell RNA-Seq (genes ranked blow the top 10%) also included previously identified CB GPCRs, such as type-1A angiotensin II receptor (Agtr1a), dopamine receptor (Drd2) and endothelin-1 receptor (Ednra) (Gauda et al. 1996;Fung et al. 2001;Chen et al. 2002).
+The various ligands activating these receptors suggest their potential influence over CB sensory activities.
+Among the highly expressed GPCR signalling genes in CB glomus cells, more than half of them are involved in the cAMP-mediated GPCR signalling pathway (Table 5).
+Molecules participating in this pathway include G αs -coupled GPCRs (Olfr78, Adora2a, Adcyap1r1), G αi -coupled GPCRs (P2ry12, Cnr1), G proteins that regulate adenyl cyclase (Gnas, Gnao1, Gnai2, Gnai3, Gnal), the cAMP-activating adenyl cyclase (Adcy1), the cAMP-dependent protein kinase A (PKA) (Prkar1a, Prkacb, Prkaca, Prkar2a) and PKA regulators (Pkib, Akap9, Akap11, Akap8).
+Also notable was the presence of the protein kinase C (PKC)-mediated GPCR signalling pathway components (Table 5).
+This is supported by the expression of G αq/11 -coupled GPCRs (Agtr1a, and Ednra) and corresponding G proteins (Gnaq, Gna11), downstream effectors such as PKC (Prkce, Prkca), as well as several diacylglycerol (DAG) kinases (Dgkk, Dgkh, Dgkg).
+Moreover, we noted some highly ranked genes that undertake roles in regulating GPCR signalling (Table 5), such as regulators of G protein signalling family members (Rgs4, Rgs5) that facilitate the hydrolysis of GTP-bound G proteins.
+Taken together, the abundant GPCR signalling pathway transcripts detected in CB glomus cells emphasize the notion that GPCR signalling, especially the cAMP-mediated signal transduction pathway, is important in modulating CB function.
+Furthermore, we have characterized several GPCRs and GPCR signalling components not previously described in CB glomus cells.
+According to our RNA-Seq data, olfactory receptor Olfr78 was the most abundant GPCR in CB glomus cells.
+Olfr78 is a relatively conserved olfactory receptor, with conserved orthologues found in mammals and birds (Fig. 7A).
+Interestingly, the intact Olfr78 sequence is also present in dolphins, a species without an olfactory nerve, suggesting an ectopic functional significance outside of olfaction.
+To validate active Olfr78 expression in the CB in vivo, we performed lacZ staining using an Olfr78-IRES-taulacZ transgenic mouse strain Olfr78 tm1Mom /MomJ, where the Olfr78 coding sequence is replaced with GFP followed by IRES-taulacZ (Bozza et al. 2009).
+As shown in Fig. 7B, blue precipitations marked the cells in the CB but not any other cells in the nearby superior cervical ganglion, indicative of an active Olfr78 promoter in CB glomus cells.
+GPCRs expressed in CB glomus cells, such as the adenosine receptor and the PACAP receptor, have been shown to affect CB sensory activities through receptor activation.
+Analogous to this, ligands for Olfr78 can probably also affect CB function.
+To identify such ligands, we utilized an established heterologous cell system for screening olfactory receptors (Zhuang & Matsunami, 2008).
+Olfr78 was expressed in HEK293T cells and cAMP-induced luciferase activity was monitored after exposure to different chemicals.
+A screening was preformed on Olfr78 against 345 diverse odourants.
+After a secondary screening, we found that two short chain fatty acids (SCFA), acetic acid and propionic acid, act as potent Olfr78 agonists, whereas some other SCFA, such as lactic acid, mildly activated Olfr78 (Fig. 7C), consistent with previous studies (Saito et al. 2009;Pluznick et al. 2013;Chang et al. 2015).
+We further showed that Olfr78 responded similarly to both acetic acid and sodium acetate (pH 7.4) (EC 50 = 0.5 mM), suggesting that acetate, not acid, is activating this receptor (Fig. 7D).
+In summary, we identified the SCFA-sensing olfactory receptor in the CB glomus cells that may contribute to chemosensory function in the CB.
+The signal transductions of CB glomus cells rely on modulation of channel opening probabilities, a process that is not fully understood.
+To help address this question, we compiled a list of abundant ion channels identified through the single CB glomus cell RNA-Seq (Table 6).
+Ion channels from a variety of families were detected in CB glomus cells, many of which were expressed at moderate levels, yet still confirmed previous studies (Table 7).
+Consistent with a prominent role of the background potassium channels in initiating glomus cell depolarization under hypoxia (Buckler et al. 2000;Buckler, 2007), G-protein signalling 4; Olfr78, olfactory receptor 78; P2ry12, P2Y purinoceptor 12; Pkib, cAMP-dependent protein kinase inhibitor β; Dgkk, diacylglycerol kinase kappa; Lphn1, latrophilin-1 precursor; Adcy1, adenylate cyclase type 1; Adcyap1r1, pituitary adenylate cyclase-activating polypeptide type I receptor; Ednra, endothelin-1 receptor precursor; Hcrtr1, orexin receptor type 1; Olfr558, olfactory receptor 558; Grina, glutamate receptor, ionotropic, N-methyl-D-aspartate-associated protein 1; Chrna3, neuronal ACh receptor subunit α-3 precursor; Gria3, glutamate receptor 3; Trpm7, transient receptor potential cation channel subfamily M member 7; Cacnb3, voltage-gated L-type calcium channel subunit β-3; Gria2, glutamate receptor 2; Ndufa4l2, NADH dehydrogenase [ubiquinone] 1α subcomplex subunit 4-like 2; Epas1, endothelial PAS domain-containing protein 1; Cox4i2, cytochrome c oxidase subunit 4 isoform 2; Egln1, egl-9 family hypoxia-inducible factor 1; Arnt2, aryl hydrocarbon receptor nuclear translocator 2; Hif1α, hypoxia-inducible factor 1-α; Nnat, neuronatin; Chga, chromogranin a; Chgb, chromogranin b; Th, tyrosine hydroxylase; Uchl1, ubiquitin carboxy-terminal hydrolase L1; Cyb561, cytochrome b561; Maged1, melanoma-associated antigen D1; Methig1, methyltransferase hypoxia inducible domain containing 1; Ly6h, lymphocyte antigen 6 complex, locus H; Adipor1, adiponectin receptor 1; Slc25a4, solute carrier family 25 (mitochondrial carrier, adenine nucleotide translocator), member 4; Car2, carbonic anhydrase 2; Cox4i1, cytochrome c oxidase subunit 4 isoform 1; Npr2, atrial natriuretic peptide receptor 2 precursor; Syp, synaptophysin
+.
+   T. Zhou and others J Physiol 000.0 the most abundantly expressed ion channel found was the two-pore domain potassium channel TASK1 (Kcnk3).
+Another channel of the same family, TREK1 (Kcnk2), was also detected, albeit of lower abundance, consistent with a previous study (Yamamoto & Taniguchi, 2006).
+Interestingly, other potassium channels detected are mostly voltage-gated potassium channels and calcium-activated potassium channels, both of which have been suggested as additional regulators in CB chemotransduction (Wyatt & Peers, 1995;Sanchez et al. 2002).
+In particular, in the present study, we show that a large number of transcripts encode the inwardly-rectifying hERG channel (Kcnh2).
+Meanwhile, other types of voltage-gated potassium channels detected include the A-type potassium channels (Kcnc4, Kcnd2) and the delayed rectifier channels (Kcnq5, Kcnq2, Kcnb1, Kcnc1).
+The presence of large conductance calcium-activated potassium channel Maxi-K is supported by the expression of both its α and β subunits (Kcnma1, Kcnmb2).
+There is also evidence to suggest the contributions of voltage-gated sodium channels in oxygen sensing by CB glomus cells in rats (Caceres et al. 2007).
+Consistently, we have demonstrated sequencing reads mapping to voltage-gated sodium channel subunits Scn8a, Scn3a, Scn3b and Scn9a in mouse glomus cells.
+As expected, several genes encoding the voltage-gated calcium channel subunits were also expressed at high levels, consistent with the notion that calcium influx follows the membrane depolarization step (Buckler & Vaughan-Jones, 1994).
+Although the high voltage-gated L-type and N-type calcium channels appeared to be most prevalent, we also observed expression of intermediate voltage-gated R-type and low voltage-gated T-type calcium channels, which is consistent with a recent demonstration of the functional involvement of T-type channels in the mouse CB (Makarenko et al. 2015).
+Furthermore, several transient receptor potential channels that may act as additional source of calcium influx were detected.
+Specifically, Trpm7, Trpc3 and Trpc5 from the TRPM and TRPC subfamilies were expressed.
+We also found multiple ligand-gated ion channels in CB glomus cells.
+These include a highly expressed AMPA-type glutamate receptor (Gria2).
+Among the less abundant glutamate receptors genes was an NMDA receptor family member Grin1, which was previously reported in rat CB glomus cells (Liu et al. 2009).
+Our data also corroborate the previous suggestion that nicotinic ACh receptors contribute to glomus cell excitation (Wyatt & Peers, 1993) because several subunits of this receptor were detected.
+Inhibitory receptors subunits (Glrb, Gabrb3) were discovered as well, which belong to the glycine receptor and GABA A receptor, respectively.
+Gabrb3 is also one of the less abundant genes whose expression in CB glomus cells has been previously reported in the literature (Igarashi et al. 2009).
+Taken together, our single cell RNA-Seq identified a CB glomus cell ion channel profile that supports the current understanding of CB membrane conductance.
+T. Zhou and others J Physiol 000.0
+Furthermore, we identified ion channel transcripts in CB glomus cells that may serve as additional players in regulating membrane potential.
+In our CB glomus cell RNA-Seq, we found Epas1 (also known as hypoxia-inducible factor 2α, Hif2α) to be the second most abundant transcript.
+This is corroborated by a strong Epas1 mRNA in situ hybridization signal (Fig. 4C), as well as previous studies reporting the constitutive expression of Hif2α protein in mouse CB glomus cells (Tian et al. 1998;Peng et al. 2011).
+Furthermore, the sequencing result also indicated the presence of other HIF pathway components, such as the hypoxia-inducible factor 1a (Hif1α), the HIFα heterodimer partner aryl hydrocarbon receptor nuclear translocator 2 (Arnt2) and the hypoxia-inducible factor prolyl hydroxylase 2 (PHD2, also known as Egln1).
+Both HIF1α and HIF2α are transcription factors stabilized under long-term hypoxia to help initiate transcriptions of hypoxia responsive genes.
+This relatively slow response dynamic of HIFα to hypoxia does not appear to be an ideal feature of acute oxygen sensing.
+Nonetheless, heterozygous Hif1α and Hif2α deficient mice, respectively, display an altered hypoxic response to chronic and acute hypoxia (Kline et al. 2002;Peng et al. 2006;Peng et al. 2011).
+HIFs may prove essential as a result of transcribing other genes relevant to CB  function.
+Consistent with this, several HIF target genes were also highly expressed in our RNA-Seq data (Table 8), including genes promoting cell growth (Tgfa, Mcl1) and glycolysis (Slc2a3, Ldha, Aldoa).
+These genes are consistent with the ability of the CB to self-proliferate and sense low glucose (Pardal & Lopez-Barneo, 2002;Pardal et al. 2007;Platero-Luengo et al. 2014).
+Unexpectedly, two hypoxia-inducible mitochondrial ETC subunits, Ndufa4l2 and Cox4i2, were among the most highly expressed genes.
+Their abundance in the CB glomus cells does not require hypoxia induction because constitutive expression was observed under normoxic conditions (Fig. 4C andF).
+Based on our meta-analysis of previous studies, although Cox4i2 was moderately expressed in the top 53-63% of whole CB genes, Ndufa4l2 did show relatively high expression in mice CB (Balbir et al. 2007;Chang et al. 2015).
+Ndufa4l2 is highly ranked (top 0.28%) in the C57BL6/J whole CB RNA-Seq data (Chang et al. 2015).
+Interestingly, Ndufa4l2 occupied a higher ranking in the high hypoxia responder DBA/2J strain (top 8.47%) than the low hypoxia responder A/J strain (top17.02%).
+Notably, these two genes were also ranked highly among the list of differentially expressed genes in CB glomus cells, which may imply specialized functions in the CB (Fig. 6B).
+In line with this, the CB mitochondria have demonstrated unusual characteristics, which, along with other evidence, led to the theory that the CB is equipped with specialized mitochondria for sensing moderate hypoxia (Donnelly & Carroll, 2005).
+Such unique features may require mitochondria that are constituted with alternative molecules.
+Although it has been demonstrated that Ndufa4l2 and Cox4i2 are crucial for preventing excess reactive oxygen species (ROS) production under hypoxic conditions in other cell types (Fukuda et al. 2007;Tello et al. 2011), further studies are required to explore their functional significance in the CB, which may lead to novel mechanistic insights.
+Overall, the CB glomus cells constitutively overexpress HIFs and certain HIF transcriptional targets that are normally part of the counteractive mechanism against the negative impacts of sustained hypoxia.
+Specifically, the CB glomus cells transcriptionally upregulate atypical mitochondrial ETC components, emphasizing the previous notion that unique mitochondria are possibly present in the CB and may be responsible for oxygen sensing.
+Paper_method:
+Figure 1 .1Figure 1
+.
+Workflow of preparing single cell RNA-SeqThe tissue of interest was dissected out from mice for further enzymatic and mechanical treatment to obtain single cells in suspension.
+Cells are coloured differently to represent the heterogeneity of cell types present at this step.
+Each individual single cell was carefully dispensed into a PCR tube containing lysis buffer and heated for RNA denaturation.
+mRNAs were reverse transcribed using anchor T primers and further processed to generate poly(A) tailed single-stranded cDNAs, which were subsequently amplified using anchor T primers.
+To identify the cell type of interest, each single cell-derived cDNA was used as a template for the marker genes analysis.
+cDNAs capable of amplifying specific cell type markers were selected and used for Illumina library preparation and sequencing.
+Sequences from these candidate cells were then aligned to the current mouse genome database for further analysis.
+Figure 2 .2Figure 2.
+Transcriptome comparison of single OSNs A, scatter plot of gene expression profiles (RPM values) from individually picked and processed single OSNs.
+The Pearson correlation coefficient between the two samples is indicated.
+Coloured dots represent the predominant olfactory receptor expressed in each OSN.
+B, scatter plot comparing the average expression profile of our single OSNs with the transcriptome of fluorescence-activated cell sorted mature OSNs (Omp positive cells).
+The Pearson correlation coefficient is indicated.
+Coloured dots label genes crucial to OSN function.
+Omp, olfactory marker protein; Gnal, guanine nucleotide binding protein, α stimulating, olfactory type; Cnga2, cyclic nucleotide gated channel α2; Rtp1, receptor transport protein 1; Adcy3, adenylate cyclase type 3.
+Figure 3 .3Figure 3.
+Transcriptome comparison of single CB glomus cells A, representative marker genes analysis for four single cells isolated from CB dissociations.
+Cells 1 and 2 are considered candidate CB glomus cells as a result of their expression of glomus cell markers Th (tyrosine hydroxylase), Uchl1 (ubiquitin carboxy-terminal hydrolase L1) and Kcnk3 (potassium channel subfamily K member 3).
+B, histogram of the RPM values of all detected genes in eight individually picked and processed candidate CB glomus cells (G1 through G8).
+C, scatter plot of gene expression profiles (RPM values) from two single CB glomus cells.
+The Pearson correlation coefficient between the two samples is indicated.
+D, scatter plot of mean expression profiles from single CB glomus cell RNA-Seq and C57Bl6/J CB RNA-Seq.
+The Pearson correlation coefficient is indicated.
+E, scatter plot of mean expression profiles from single CB glomus cell RNA-Seq and DBA/2J CB microarray.
+Mean expression levels were calculated and their relative rankings were used for comparison.
+The Pearson correlation coefficient is indicated.
+Figure 4 .4Figure 4.
+Validation of single CB glomus cell RNA-Seq data using in situ hybridization and immunohistochemistryA-E, genes identified through single CB glomus cell RNA-Seq were confirmed by in situ hybridization.
+CB sections from mice 3 weeks or older were hybridized with DIG-labelled antisense RNA probes of GPCR signalling components (A), ion channels and associated proteins (B), HIF pathway components (C), neuronal markers (D) and others (E).
+Olfr588, not detected in CB glomus cell RNA-Seq, served as a negative control (A).
+Scale bar = 100 μm.
+F, representative images of adult mouse CB sections stained with primary antibodies specific for the proteins of several highly abundant genes identified in the single CB glomus cell RNA-Seq.
+Scale bar = 100 μm.
+Gnas, (guanine nucleotide binding protein, α stimulating) complex locus; Rgs5, regulator of G-protein signalling 5; Dgkh, diacylglycerol kinase eta; Adora2a, adenosine receptor A2a; Rgs4, regulator of
+Figure 5
+.5Figure 5
+.
+Transcriptome comparison between single CB glomus cells and other cell types For each cell type, the average RPM values are the mean expression levels from separately picked and processed single cells.
+A, scatter plot showing a weak correlation between CB glomus cells and OSNs.
+The Pearson correlation coefficient is indicated.
+B, scatter plot showing a weak correlation between CB glomus cells and VSNs.
+The Pearson correlation coefficient is indicated.
+C, principal component analysis of gene expression patterns for eight single CB glomus cells, two single OSNs, and two single VSNs.
+The amount of variance explained by principal components 1 and 2 is shown on the x-and y-axes, respectively.
+Figure 6 .6Figure 6
+.
+Differential gene expression analysis between single CB glomus cells and non-CB tissuesDifferential gene expression analysis was performed using single cell RNA-Seq data from CB glomus cells, OSNs, VSNs as well as public available RNA-Seq data from 15 other mouse tissues.
+A, volcano plot displays −log 10 (P value) as a function of log 2 (fold change) between CB glomus cells and non-CB tissues, with coloured dots indicating significantly differentially expressed genes (FDR < 0.01).
+The significantly over-represented genes in CB glomus cells are indicated in red, whereas the significantly under-represented genes in CB glomus cells are indicated in blue.
+B, heat maps showing the expression patterns of the significantly differentially expressed CB glomus cell genes, with the top 50 over-represented genes shown on the left and top 50 under-represented genes shown on the right.
+Mean expression levels were calculated and their relative rankings in each tissue were shown, with the least abundant gene and other non-detected genes ranked as 100%.
+Figure 7 .7Figure 7.
+Olfr78 is a conserved olfactory receptor activated by acetate A, unrooted phylogenetic tree of Olfr78 family orthologs based on similarity of amino acid properties.
+B, lacZ staining of a carotid artery bifurcation from a heterozygous Olfr78 tm1Mom /MomJ mouse.
+Blue precipitation marks the lacZ positive cells.
+SCG, superior cervical ganglion.
+C, dose-response curves of Olfr78 against SFCA.
+The x-axis represents molar concentration in log scale.
+D, dose-response curves of Olfr78 against acetic acid and sodium acetate (pH 7.4).
+The x-axis represents molar concentration in log scale.
+Table 7.
+Several families of ion channels previously reported in CB were detected by the single glomus cell RNA-
