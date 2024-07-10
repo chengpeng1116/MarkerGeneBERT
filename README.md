@@ -24,14 +24,14 @@ pip install NER_Model_local_URL<br>
 
 
 ##  run MarkerGeneBERT
-cd workpath<br>
+cd demo_workpath<br>
 python ~./script/CellMarker_sh.py --cfg ~./CellMarker.cfg<br> 
 - CellMarker_sh.py will return step1-6.sh , the user needs to run the scripts for step1-step6 in sequence
 ```
-(1)  bash step1_check_PMID_status.sh    ## Used to detect the analysis status of various literature under the workpath, and save the analysis status results to DB-PMID_status.csv 
+(1)  bash step1_check_PMID_status.sh    ## Used to detect the analysis status of various literature under the demo_workpath, and save the analysis status results to DB-PMID_status.csv 
 (2)  bash step2_update_DB.sh    ## Obtain the PMID list from PUBMED based on keywords and save it in update_pmid.csv
 (3)  bash step3_download_PMID.sh    ## Download XML formatted literature from tidyPMC using R script. If the download is successful, it will be updated to the database directory. If the download fails, the PMID will be saved to update_PMID_checked_PMC_download_fail.csv
-(4)  bash step4_pdf2txt_a04.sh    ## Parse the PDF of the literature under the workpath into txt format
+(4)  bash step4_pdf2txt_a04.sh    ## Parse the PDF of the literature under the demo_workpath into txt format
 (5)  bash step5_cellmarker_extract.sh    ## Extract cell markers from all literature under the analysis path
 (6)  bash step6_summary_cellmarker_from_DB.sh    ## Summarize all results under the workpath
 ```
