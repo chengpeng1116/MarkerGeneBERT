@@ -1,0 +1,6 @@
+﻿tissue_name,tissue_freq,keyword_freq,cell_freq,tissue_rank,keyword_rank,cell_rank,rank_stat,tissue_name_merge
+skin,2,4,2,2,4,3,9,skin:9
+dermi,2,2,3,2,3,4,9,dermi:9
+keloid tissue,2,1,1,2,2,2,6,keloid tissue:6
+dermal,1,1,1,1,2,2,5,dermal:5
+epidermi,1,1,1,1,2,2,5,epidermi:5
