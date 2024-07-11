@@ -24,7 +24,7 @@ pip install NER_Model_local_URL<br>
 
 
 ##  run MarkerGeneBERT
-cd result_demo<br>
+cd ~./result_demo/<br>
 python ~./../script/CellMarker_sh.py --cfg CellMarker.cfg<br> 
 - CellMarker_sh.py will return step1-6.sh , the user needs to run the scripts for step1-step6 in sequence
 - The Marker-related sentence classification model of MarkerGeneBERT is stored in https://github.com/chengpeng1116/MarkerGeneBERT/Database/MarkerGeneBERT/mode-best and embedded in the step5_cellmarker_extract.sh script
