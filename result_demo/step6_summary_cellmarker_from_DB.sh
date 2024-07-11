@@ -1,3 +1,3 @@
-#将分析路径下的所有文献进行cell-marker的提取
-head -n 1 /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test//paper_process_result/28576768/cellmarker_result.csv > /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test//cellmarker_result_all.csv
-cat /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test//paper_process_result/*/cellmarker_result.csv | grep -v "PMID"  >> /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test//cellmarker_result_all.csv
+#Parse the PDF of the literature under the analysis path into txt format # Extract all the literature under the analysis path using cell markers
+head -n 1 ~/result_demo//paper_process_result/26940531/cellmarker_result.csv > ~/result_demo/cellmarker_result_all.csv
+cat ~/result_demo/paper_process_result/*/cellmarker_result.csv | grep -v "PMID"  >> ~/result_demo/cellmarker_result_all.csv
