@@ -1,0 +1,22 @@
+#将分析路径下的所有文献进行cell-marker的提取
+cd /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_1.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_2.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_3.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_4.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_5.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_6.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_7.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_8.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_9.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_10.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_11.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_12.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_13.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_14.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_15.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_16.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_17.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_18.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_19.sh
+qsub /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/sub_step5_cellmarker_extract/s5_run_20.sh
