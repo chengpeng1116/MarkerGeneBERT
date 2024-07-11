@@ -1,6 +1,6 @@
-#根据关键词从PUBMED得到PMID列表，保存于update_pmid.csv 
-/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/R4.1/bin/Rscript /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/pipeline_sh/batch_download_PMID.R  --keyword '"Animals"[MeSH Terms] AND ("Single-Cell Analysis"[MeSH Terms] OR ("single-cell" AND "expression"))' --mindate 2020  --maxdate 2020  --output_file_path "/mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/update_pmid_cellmarker2.csv" &&\
+#Obtain the PMID list from PUBMED based on keywords and save it in update_pmid.csv
+Rscript ~./script/batch_download_PMID.R  --keyword '"Animals"[MeSH Terms] AND ("Single-Cell Analysis"[MeSH Terms] OR ("single-cell" AND "expression"))' --mindate 2017  --maxdate 2022  --output_file_path "~./result_demo/demo_update_pmid_cellmarker2.csv" &&\
 
 
-#将update_pmid.csv文件中的PMID与DB_PMID_status.csv进行比较，输出本数据库未收录的PMID列表，保存于文件update_PMID_checked.csv
-/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/pipeline_sh/update_DB.py  --update_pmid "/mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/update_pmid_cellmarker2.csv" --DB_PMID_status /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test//DB_PMID_status.csv --output_path /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test//update_PMID_checked.csv
+#Compare the PMID in the update_pmid.csv file with DB-PMID_status.csv, output a list of PMIDs not included in this database, and save it in the file update-PMID_check.csv
+python ~./script/update_DB.py  --update_pmid "~./result_demo/demo_update_pmid_cellmarker2.csv" --DB_PMID_status ~./result_demo/DB_PMID_status.csv --output_path ~./result_demo/update_PMID_checked.csv
