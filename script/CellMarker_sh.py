@@ -90,7 +90,7 @@ if check_status==1 or not os.path.exists(Work_path+"/DB_PMID_status.csv") :
 
 step_sh = open(Work_path + "/step2_update_DB.sh", "w")
 print("#根据关键词从PUBMED得到PMID列表，保存于update_pmid.csv ", file= step_sh)
-order = "/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/R4.1/bin/Rscript "+root_sh_dir+"/batch_download_PMID.R " + ' --keyword '+"'" + '"Animals"[MeSH Terms] AND ("Single-Cell Analysis"[MeSH Terms] OR ("single-cell" AND "expression"))' +"'" +" --mindate 2020  --maxdate 2020  --output_file_path "+ update_pmid+" &&\\\n"
+order = "Rscript "+root_sh_dir+"/batch_download_PMID.R " + ' --keyword '+"'" + '"Animals"[MeSH Terms] AND ("Single-Cell Analysis"[MeSH Terms] OR ("single-cell" AND "expression"))' +"'" +" --mindate 2020  --maxdate 2020  --output_file_path "+ update_pmid+" &&\\\n"
 print(order, file= step_sh)
 print("#将update_pmid.csv文件中的PMID与DB_PMID_status.csv进行比较，输出本数据库未收录的PMID列表，保存于文件update_PMID_checked.csv", file= step_sh)
 order = "/python3 "+root_sh_dir+"/update_DB.py  --update_pmid " +update_pmid +" --DB_PMID_status " +Work_path+"/DB_PMID_status.csv --output_path "+ Work_path+"/update_PMID_checked.csv"
@@ -100,12 +100,12 @@ step_sh.close()
 
 step_sh = open(Work_path + "/step3_download_PMID.sh", "w")
 print("#使用R脚本从tidyPMC下载XML格式的文献。下载成功则更新至数据库目录下，下载失败则将PMID保存至update_PMID_checked_PMC_download_fail.csv", file= step_sh)
-order = "/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/R4.1/bin/Rscript "+root_sh_dir+"/extract_paper_info.R " + Work_path+"/update_PMID_checked.csv" +" " + DB_path+ " " + Work_path+"/update_PMID_checked_PMC_download_fail.csv &&\\\n"
+order = "Rscript "+root_sh_dir+"/extract_paper_info.R " + Work_path+"/update_PMID_checked.csv" +" " + DB_path+ " " + Work_path+"/update_PMID_checked_PMC_download_fail.csv &&\\\n"
 print(order, file= step_sh)
 temp_pdf_path = DB_path+"/temp_pdf/"
 make_dir(temp_pdf_path)
 print("#使用scihub，将update_PMID_checked_PMC_download_fail.csv中的文献利用scihub下载PDF格式的文献", file= step_sh)
-order = "##下载量小时用 ： /mnt/icfs/personal/xiaolingzhang/.local/bin/scihub -ns -ow N -s "+ Work_path+"/update_PMID_checked_PMC_download_fail.csv" +"  -O "+ temp_pdf_path +"  -u https://sci-hub.ren"
+order = "##下载量小时用 ： scihub -ns -ow N -s "+ Work_path+"/update_PMID_checked_PMC_download_fail.csv" +"  -O "+ temp_pdf_path +"  -u https://sci-hub.ren"
 print(order, file= step_sh)
 
 make_dir(Work_path+"/sub_step3_pdf_download/")
@@ -138,7 +138,7 @@ for each_need_update in tqdm(need_update):
     while i <=4:
         i+=1
         try:
-            os.system("/mnt/icfs/personal/xiaolingzhang/.local/bin/scihub -ns -ow N -s "+ str(each_need_update) +"  -O '''+root_sh_dir+'''/DB_source/temp_pdf/  -u https://sci-hub.ren") 
+            os.system("scihub -ns -ow N -s "+ str(each_need_update) +"  -O '''+root_sh_dir+'''/DB_source/temp_pdf/  -u https://sci-hub.ren") 
             if os.path.exists(root_sh_dir+"/DB_source/temp_pdf/"+str(each_need_update)+".pdf"):
                 i=10
                 no_use = fail_pmid.pop()
@@ -163,7 +163,7 @@ for i in range(0,10):
     print(string_temp,file= step_sh)
 
 print("#将PDF格式的文献转存至数据库目录下", file= step_sh)
-order = "/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/R4.1/bin/Rscript "+root_sh_dir+"/mv_pdf_download_fromTemp.R " + temp_pdf_path+ " " + DB_path
+order = "Rscript "+root_sh_dir+"/mv_pdf_download_fromTemp.R " + temp_pdf_path+ " " + DB_path
 print(order, file= step_sh)
 step_sh.close()
 
