@@ -161,7 +161,7 @@ def fullname2abreviation(each_line,abbreviations_dict):
 def pdf_fig2txt(work_path,paper_id_path):
     temp_order = open(work_path+"/paper_process_result/pdf_fig2txt.sh","w")
     print("bash "+ root_sh_dir+"/GetTextFromPDF_20230228.sh "+ work_path+"/paper_process_result/ &",file=temp_order ) 
-    print("/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python "+root_sh_dir+"/extract_txt2cellname.py -w "+ work_path+"/paper_process_result/" + ' -p '+ paper_id_path,file=temp_order ) 
+    print("python3 "+root_sh_dir+"/extract_txt2cellname.py -w "+ work_path+"/paper_process_result/" + ' -p '+ paper_id_path,file=temp_order ) 
     temp_order.close()
 
 
@@ -1863,7 +1863,7 @@ test_docs = document(test)
 doc_bin = DocBin(docs = test_docs)
 doc_bin.to_disk("/mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/manual_part/train_dataset/test.spacy")
 
-os.system("/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python -m spacy train /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/manual_part/train_dataset/config.cfg --verbose --output /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/manual_part/train_dataset/train_model_150_01/")
+os.system("python3 -m spacy train /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/manual_part/train_dataset/config.cfg --verbose --output /mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/manual_part/train_dataset/train_model_150_01/")
 
 #### part1 train model 150篇   0 vs 1 和 2  暂时不做
 
