@@ -7,8 +7,8 @@ from tqdm import tqdm
 ### /mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python
 
 main_sh_path = os.getcwd()
-root_sh_dir = sys.path[0] 
-# root_sh_dir = "/mnt/rorke/personal/pengcheng/project_collect/Cellmarker_NLP/pipeline_test/pipeline_sh"
+#root_sh_dir = sys.path[0] 
+root_sh_dir = "/docker_file/MarkerGeneBERT"
 def make_dir(temp_dir):
     if not os.path.exists(temp_dir):
         os.makedirs(temp_dir)
@@ -80,12 +80,12 @@ for each_DB_path_file in tqdm(DB_path_file):
 
 step_sh = open(Work_path + "/step1_check_PMID_status.sh", "w")
 print("# 用于检测分析路径下各文献分析状态，并将分析状态结果保存至DB_PMID_status.csv" , file= step_sh)
-order = "/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python "+root_sh_dir+"/check_PMID_status.py  --check_path " +Analysis_path +" --output_path " +Work_path+"/DB_PMID_status.csv"
+order = "python3 "+root_sh_dir+"/check_PMID_status.py  --check_path " +Analysis_path +" --output_path " +Work_path+"/DB_PMID_status.csv"
 print(order, file= step_sh)
 step_sh.close()
 
 if check_status==1 or not os.path.exists(Work_path+"/DB_PMID_status.csv") :
-    os.system("/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python "+root_sh_dir+"/check_PMID_status.py  --check_path " +Analysis_path +" --output_path " +Work_path+"/DB_PMID_status.csv")
+    os.system("python3 "+root_sh_dir+"/check_PMID_status.py  --check_path " +Analysis_path +" --output_path " +Work_path+"/DB_PMID_status.csv")
 
 
 step_sh = open(Work_path + "/step2_update_DB.sh", "w")
@@ -93,7 +93,7 @@ print("#根据关键词从PUBMED得到PMID列表，保存于update_pmid.csv ", f
 order = "/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/R4.1/bin/Rscript "+root_sh_dir+"/batch_download_PMID.R " + ' --keyword '+"'" + '"Animals"[MeSH Terms] AND ("Single-Cell Analysis"[MeSH Terms] OR ("single-cell" AND "expression"))' +"'" +" --mindate 2020  --maxdate 2020  --output_file_path "+ update_pmid+" &&\\\n"
 print(order, file= step_sh)
 print("#将update_pmid.csv文件中的PMID与DB_PMID_status.csv进行比较，输出本数据库未收录的PMID列表，保存于文件update_PMID_checked.csv", file= step_sh)
-order = "/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python "+root_sh_dir+"/update_DB.py  --update_pmid " +update_pmid +" --DB_PMID_status " +Work_path+"/DB_PMID_status.csv --output_path "+ Work_path+"/update_PMID_checked.csv"
+order = "/python3 "+root_sh_dir+"/update_DB.py  --update_pmid " +update_pmid +" --DB_PMID_status " +Work_path+"/DB_PMID_status.csv --output_path "+ Work_path+"/update_PMID_checked.csv"
 print(order, file= step_sh)
 step_sh.close()
 
@@ -153,7 +153,7 @@ fail_pmid.to_csv("'''+Work_path+'''/sub_step3_pdf_download/pdf_fail_"+str(count_
 print("#cd  "+Work_path+"/sub_step3_pdf_download/",file= step_sh)
 for i in range(0,10):
     output_file = open(Work_path+"/sub_step3_pdf_download/run_pdf_"+str(i)+".sh","w")
-    print("/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python "+Work_path+"/sub_step3_pdf_download/run_pdf_"+str(i)+".py",file=output_file)
+    print("python3 "+Work_path+"/sub_step3_pdf_download/run_pdf_"+str(i)+".py",file=output_file)
     output_file.close()
     output_file1 = open(Work_path+"/sub_step3_pdf_download/run_pdf_"+str(i)+".py","w")
     print("count_s="+str(i),file=output_file1)
@@ -170,7 +170,7 @@ step_sh.close()
 
 step_sh = open(Work_path + "/step4_pdf2txt_a04.sh", "w")
 print("#将分析路径下的文献PDF解析为txt格式"  ,file=step_sh ) 
-print("/mnt/icfs/personal/xiaolingzhang/miniconda3/envs/grobid/bin/python "+root_sh_dir+"/pdf2txt.py --Analysis_path " +Analysis_path ,file=step_sh ) 
+print("python3 "+root_sh_dir+"/pdf2txt.py --Analysis_path " +Analysis_path ,file=step_sh ) 
 step_sh.close()
 
 
@@ -185,7 +185,7 @@ if os.path.exists(Work_path+"/DB_PMID_status.csv"):
     count = len(open(Work_path+"/DB_PMID_status.csv",'r').readlines())
     if count < 50:
         sub_step_sh = open(Work_path + "/sub_step5_cellmarker_extract/s5_run.sh", "w")
-        print("/mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python "+root_sh_dir+"/std_all_part.py --work_path "+ Work_path + ' --paper_id_path '+ Work_path+"/DB_PMID_status.csv" ,file=sub_step_sh ) 
+        print("python3 "+root_sh_dir+"/std_all_part.py --work_path "+ Work_path + ' --paper_id_path '+ Work_path+"/DB_PMID_status.csv" ,file=sub_step_sh ) 
         sub_step_sh.close()
         print("qsub "+Work_path + "/sub_step5_cellmarker_extract/s5_run.sh",file=step_sh ) 
     else:
