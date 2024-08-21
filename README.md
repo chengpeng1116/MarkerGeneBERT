@@ -2,7 +2,7 @@
 a natural language processing (NLP) system designed to extract critical information from the literature regarding species, tissues, cell types, and cell marker genes in the context of single-cell sequencing studies
 
 ## docker image
-We provide Docker images and Dockerfiles for building
+We provide Docker images (markergenebert.image) and Dockerfile for building 
 
 ## Conda environment setup
 ### Requisites
