@@ -1,31 +1,34 @@
 # MarkerGeneBERT
 a natural language processing (NLP) system designed to extract critical information from the literature regarding species, tissues, cell types, and cell marker genes in the context of single-cell sequencing studies
 
+## docker image
+We provide Docker images and Dockerfiles for building
 
-## Requisites
+## Conda environment setup
+### Requisites
 python(v3.9.0)<br>
 R(v4.3.2)<br>
 sci-hub : https://github.com/suqingdong/scihub<br>
 grobid : https://github.com/kermitt2/grobid<br>
 
-
-## Download the NER_Model from scispacy
+### Download the NER_Model from scispacy
 en_core_sci_scibert :https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_scibert-0.5.4.tar.gz<br>
 en_ner_jnlpba_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_jnlpba_md-0.5.4.tar.gz<br>
 en_ner_craft_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_craft_md-0.5.4.tar.gz<br>
 en_ner_bionlp13cg_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bionlp13cg_md-0.5.4.tar.gz<br>
 en_ner_bc5cdr_md : https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz<br>
 
-## Instalation NER Model
+### Instalation NER Model
 pip install pandas<br>
 pip install spacy<br>
 pip install scispacy<br>
 pip install NER_Model_local_URL<br>
 
 
+
 ##  run MarkerGeneBERT
 cd ~./result_demo/<br>
-python ~./../script/CellMarker_sh.py --cfg CellMarker.cfg<br> 
+python /opt/docker_file/MarkerGeneBERT/script/CellMarker_sh.py --cfg CellMarker.cfg<br> 
 - CellMarker_sh.py will return step1-6.sh , the user needs to run the scripts for step1-step6 in sequence
 - The Marker-related sentence classification model of MarkerGeneBERT is stored in https://github.com/chengpeng1116/MarkerGeneBERT/Database/MarkerGeneBERT/mode-best and embedded in the step5_cellmarker_extract.sh script
 ```
