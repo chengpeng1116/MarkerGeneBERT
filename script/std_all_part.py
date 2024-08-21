@@ -27,11 +27,11 @@ paper_id_end=args.paper_id_end
 #do_part= ["pdf2txt","txt2segment","extract_potentiall_valuable_segment","add_segment_text_clean","add_predict_result","cell_marker_extract_main"]
 do_part= ["txt2segment","extract_potentiall_valuable_segment","add_segment_text_clean","add_predict_result","cell_marker_extract_main"]
 ##### common import 
-gene_collect_path = root_sh_dir + "/database/gene_collect.csv"
-cell_collect_path = root_sh_dir +"/database/cell_ontology_cellname.txt"
-tissue_collect_path =root_sh_dir + "/database/cell_ontology_tissue.txt"
-tissue_cancer_collect_path = root_sh_dir +"/database/tissue_cancer.txt"
-nlp_model_path=root_sh_dir+"/text_model/train_model_all_data/model-best" 
+gene_collect_path = root_sh_dir + "/../Database/Extra_named_entity_database/gene_collect.csv"
+cell_collect_path = root_sh_dir +"/../Database/Extra_named_entity_database/cell_ontology_cellname.txt"
+tissue_collect_path =root_sh_dir + "/../Database/Extra_named_entity_database/cell_ontology_tissue.txt"
+tissue_cancer_collect_path = root_sh_dir +"/../Database/Extra_named_entity_database/tissue_cancer.txt"
+nlp_model_path=root_sh_dir+"/../Database/MarkerGeneBert/train_model_all_data/model-best" 
 from tkinter.tix import COLUMN
 import pandas as pd 
 import os 
