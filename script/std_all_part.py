@@ -31,7 +31,7 @@ gene_collect_path = root_sh_dir + "/../Database/Extra_named_entity_database/gene
 cell_collect_path = root_sh_dir +"/../Database/Extra_named_entity_database/cell_ontology_cellname.txt"
 tissue_collect_path =root_sh_dir + "/../Database/Extra_named_entity_database/cell_ontology_tissue.txt"
 tissue_cancer_collect_path = root_sh_dir +"/../Database/Extra_named_entity_database/tissue_cancer.txt"
-nlp_model_path=root_sh_dir+"/../Database/MarkerGeneBert/train_model_all_data/model-best" 
+nlp_model_path=root_sh_dir+"/../Database/MarkerGeneBert/model-best/model-best" 
 from tkinter.tix import COLUMN
 import pandas as pd 
 import os 
