@@ -7,8 +7,8 @@ from tqdm import tqdm
 ### /mnt/icfs/work/singlecelldevelopment/miniconda3/envs/Cellmarker_NLP/bin/python
 
 main_sh_path = os.getcwd()
-#root_sh_dir = sys.path[0] 
-root_sh_dir = "/docker_file/MarkerGeneBERT"
+root_sh_dir = sys.path[0] 
+
 def make_dir(temp_dir):
     if not os.path.exists(temp_dir):
         os.makedirs(temp_dir)
