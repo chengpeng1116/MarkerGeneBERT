@@ -1,1 +1,1 @@
-nohup bash /opt/docker_file/serve_grobid.sh &
+nohup bash /opt/docker_file/MarkerGeneBERT/script/script/serve_grobid.sh &
