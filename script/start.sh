@@ -1,0 +1,1 @@
+nohup bash /opt/docker_file/serve_grobid.sh &
