@@ -2,8 +2,10 @@
 a natural language processing (NLP) system designed to extract critical information from the literature regarding species, tissues, cell types, and cell marker genes in the context of single-cell sequencing studies
 
 ## docker image
-We provide Docker images (markergenebert.image) and Dockerfile for building<br> 
-We recommend using Docker containers that have already been set up, as some models that build MarkerGeneBert have a large amount of data and are affected by download speed<br> 
+docker pull chengpeng1116/markergenebert:V1<br> 
+docker run  run --rm -i -t  --ulimit core=0   chengpeng1116/markergenebert:V1<br> 
+
+We provide Docker images (markergenebert.image) and Dockerfile for building, and we recommend using Docker containers that have already been set up, as some models that build MarkerGeneBert have a large amount of data and are affected by download speed<br> 
 When building a container using Dockerfile, we suggest downloading the wget models in advance and building the Docker container by docker run -v your_local_download_path:/opt/spacy_model 
 ## Conda environment setup
 ### Requisites
