@@ -10,7 +10,8 @@ When building a container using Dockerfile, we suggest downloading the wget mode
 URL：https://pan.baidu.com/s/1v1B-rBp9jNupW-gnMzM72g <br> 
 Extract Code：4321 <br> 
 
-docker pull chengpeng1116/markergenebert:V1<br> 
+#docker pull chengpeng1116/markergenebert:V1<br> 
+docker load  markergenebert.tar<br> 
 docker run  --rm -i -t  --ulimit core=0   chengpeng1116/markergenebert:V1 bash<br> 
 
 
