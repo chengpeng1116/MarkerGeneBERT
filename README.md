@@ -5,7 +5,7 @@ a natural language processing (NLP) system designed to extract critical informat
 docker pull chengpeng1116/markergenebert:V1<br> 
 docker run  --rm -i -t  --ulimit core=0   chengpeng1116/markergenebert:V1 bash<br> 
 
-<span style="color: red;">Due to network instability, the process of pushing images to Docker Hub is still ongoing. As a temporary alternative, we provide a sharing link from Baidu Cloud to provide makergenebert.tar images. Users can refer to Docker load makergenebert.tar to extract Docker images</span>
+★★★★★ Due to network instability, the process of pushing images to Docker Hub is still ongoing. As a temporary alternative, we provide a sharing link from Baidu Cloud to provide makergenebert.tar images. Users can refer to Docker load makergenebert.tar to extract Docker images</span>
 链接：https://pan.baidu.com/s/1v1B-rBp9jNupW-gnMzM72g <br> 
 提取码：4321 <br> 
 
